@@ -19,6 +19,8 @@
 ###Useful Commands
 * list active queues: ```sudo rabbitmqctl list_queues```
 * list queues along with unacknowledged messages: ```sudo rabbitmqctl list_queues name messages_ready messages_unacknowledged```
+* list active exchanges: ```sudo rabbitmqctl list_exchanges```
+* list active bindings: ```sudo rabbitmqctl list_bindings```
 
 ###Enable message acknowledgement
 ```q.subscribe(:ack => true, :block => true) do...```
